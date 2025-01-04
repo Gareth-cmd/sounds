@@ -68,3 +68,22 @@ body {
     align-items: center;
     height: 100vh; /* Full screen height */
 }
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Add padding to avoid content sticking to edges */
+    }
+
+    .sounds-grid {
+        grid-template-columns: 1fr; /* One column layout on smaller screens */
+        gap: 15px; /* Reduce gap between cards */
+    }
+
+    .sound-card {
+        width: 100%; /* Make cards take full width of the screen */
+        height: auto; /* Let height adjust automatically */
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduce title font size for smaller screens */
+    }
+}
